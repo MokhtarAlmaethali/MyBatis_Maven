@@ -1,5 +1,6 @@
 package com.yemensoft.mapper;
 
+
 import java.sql.Date;
 import java.util.List;
 
@@ -8,6 +9,7 @@ import org.apache.ibatis.annotations.Param;
 import com.yemensoft.model.Employee;
 
 public interface EmployeeMapper {
+	// this is the interface 
 	
 	public List<Employee> getAllEmployee();
 	public Employee getEmployeeByID(int empno);

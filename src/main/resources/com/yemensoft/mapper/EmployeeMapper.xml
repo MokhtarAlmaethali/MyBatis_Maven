@@ -3,6 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
+<!-- the xml sql statment -->
 <mapper namespace="com.yemensoft.mapper.EmployeeMapper">
 	<!-- for resultType, if it is List, just write data type of list content -->
 	<select id="getAllEmployee" resultType="com.yemensoft.model.Employee">

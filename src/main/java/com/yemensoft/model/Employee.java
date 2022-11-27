@@ -3,7 +3,7 @@ package com.yemensoft.model;
 import java.sql.Date;
 
 public class Employee {
-	
+	// this is the tables
 	private int empno;
 	private String name;
 	private double sal;

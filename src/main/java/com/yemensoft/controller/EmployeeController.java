@@ -18,6 +18,7 @@ public class EmployeeController {
 		// TODO Auto-generated method stub
 
 		try {
+			// this is the controller 
 			InputStream in=Resources.getResourceAsStream("Mybatis-config.xml");
 			SqlSessionFactory sql=new SqlSessionFactoryBuilder().build(in);
 			SqlSession session= sql.openSession();

@@ -115,6 +115,7 @@ public class TestMyBatis {
 	@Test
 	public void GetAllEmployeeByCandition2()
 	{
+		//
 		try {
 			InputStream in=Resources.getResourceAsStream("Mybatis-config.xml");
 			SqlSessionFactory sql=new SqlSessionFactoryBuilder().build(in);
