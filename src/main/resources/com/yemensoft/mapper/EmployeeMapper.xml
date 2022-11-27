@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yemensoft.mapper.EmployeeMapper">
+	<!-- for resultType, if it is List, just write data type of list content -->
+	<select id="getAllEmployee" resultType="com.yemensoft.model.Employee">
+		SELECT * FROM employee
+	</select>
+	<select id="getEmployeeByID" resultType="com.yemensoft.model.Employee" parameterType="int">
+		SELECT * FROM employee where empno=#{empno}
+	</select>
+	<select id="getEmployeeByName" resultType="com.yemensoft.model.Employee" parameterType="String">
+		SELECT * FROM employee where name=#{name}
+	</select>
+	<select id="getEmployeeByCandition1" resultType="com.yemensoft.model.Employee" >
+		SELECT * FROM employee where name=#{name} and hiredate=#{hiredate}
+	</select>
+	<select id="getEmployeeByCandition2" resultType="com.yemensoft.model.Employee" >
+		SELECT * FROM employee where name=#{name} and hiredate=#{hiredate}
+	</select>
+	
+</mapper>
